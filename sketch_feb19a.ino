@@ -42,17 +42,17 @@ void loop() {
   button3 = digitalRead(incP2);
   button4 = digitalRead(decP2);
   
-  if(P1ServeCounter == 0 && P1ServeCounter < 2 && ServeSwap == 0){
+  if(P1ServeCounter < 2 && ServeSwap == 0){
     P1ServeCounter++;
     delay(200);
-    lcd.setCursor(0,3);
+    lcd.setCursor(3, 0);
     lcd.print("*");
   }
   
-  if(P2ServeCounter == 0 P2ServeCounter < 2 && ServeSwap == 1){
+  if(P2ServeCounter < 2 && ServeSwap == 1){
     P2ServeCounter++;
     delay(200);
-    lcd.setCursor(0,14);
+    lcd.setCursor(14,0);
     lcd.print("*");
   }
   
